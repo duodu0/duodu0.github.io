@@ -111,9 +111,9 @@ export const siteConfig = {
   moment: resolveMomentConfig(
     {
       covers: [
-        "https://github.com/duodu0/picx-ih/raw/master/20261009/微信图片_20261009113541_141_6.7axybipn7y.webp",
-        "https://github.com/duodu0/picx-ih/raw/master/20261009/微信图片_20261009113543_142_6.46gy6r4y4.webp",
-        "https://github.com/duodu0/picx-ih/raw/master/20261009/微信图片_20261009113544_143_6.9ddqzko897.webp",
+        "https://cdn.jsdelivr.net/gh/duodu0/picx-ih@master/20261009/微信图片_20261009113544_143_6.9ddqzko897.webp",
+        "https://cdn.jsdelivr.net/gh/duodu0/picx-ih@master/20261009/微信图片_20261009113543_142_6.46gy6r4y4.webp",
+        "https://cdn.jsdelivr.net/gh/duodu0/picx-ih@master/20261009/微信图片_20261009113541_141_6.7axybipn7y.webp",
       ],
       avatar: "/avatar.jpg",
       signature: "生活不在别处，当下即全部",
