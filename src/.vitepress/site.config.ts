@@ -75,9 +75,9 @@ export function resolveMomentConfig(
 const serverEnv = typeof process === "undefined" ? undefined : process.env;
 const runtimeBase = serverEnv?.SITE_BASE ?? import.meta.env?.BASE_URL;
 const author = {
-  name: "CcBean",
-  email: "liuyh940@gmail.com",
-  bio: "靡不有初，鲜克有终。",
+  name: "LittleBee",
+  email: "603675760@qq.com",
+  bio: "回忆是生命的第五个季节",
 };
 const favicon = {
   ico: "/favicon.ico",
@@ -87,17 +87,17 @@ const favicon = {
 
 export const siteConfig = {
   site: {
-    title: "CcBean Blog",
-    name: "CcBean Blog",
-    description: "记录工程实践、技术思考与持续学习、生活随心记。",
-    keywords: ["VitePress", "前端开发", "工程实践", "个人博客"],
+    title: "LittleBee Blog",
+    name: "LittleBee Blog",
+    description: "生活随心记",
+    keywords: ["个人博客"],
     url: serverEnv?.SITE_URL?.replace(/\/$/, "") ?? "",
     base: normalizeBase(runtimeBase),
     locale: "zh_CN",
     language: "zh-CN",
     featuredPostsLimit: 5,
     postsPerPage: 10,
-    logo: "/logo.svg",
+    logo: "/favicon.png",
     favicon,
     manifest: "/site.webmanifest",
     feeds: {
@@ -111,11 +111,12 @@ export const siteConfig = {
   moment: resolveMomentConfig(
     {
       covers: [
-        "https://cdn.jsdelivr.net/gh/ccbeango/picx-images-hosting@master/moments/84bdd2092221c459af8af9582507abb8.60uzt7r1xj.webp",
-        "https://cdn.jsdelivr.net/gh/ccbeango/picx-images-hosting@master/moments/f24190b6ac5e09ad74388ea06696b3cb.99u3pve8ga.webp",
-        "https://cdn.jsdelivr.net/gh/ccbeango/picx-images-hosting@master/moments/cca2987e0e5446c966b28c3d205cef91.13mizdgzmx.webp",
+        "https://github.com/duodu0/picx-ih/raw/master/20261009/微信图片_20261009113541_141_6.7axybipn7y.webp",
+        "https://github.com/duodu0/picx-ih/raw/master/20261009/微信图片_20261009113543_142_6.46gy6r4y4.webp",
+        "https://github.com/duodu0/picx-ih/raw/master/20261009/微信图片_20261009113544_143_6.9ddqzko897.webp",
       ],
-      signature: "向   前看！",
+      avatar: "/avatar.jpg",
+      signature: "生活不在别处，当下即全部",
       momentBatchSize: 4,
     },
     author,
@@ -133,20 +134,8 @@ export const siteConfig = {
       ],
     },
   ] satisfies NavItem[],
-  homeSocials: [
-    { label: "GitHub", href: "https://github.com/ccbeango" },
-    { label: "RSS", href: "/rss.xml" },
-  ] satisfies SocialLink[],
-  giscus: {
-    repo: "ccbeango/ccbeango.github.io",
-    repoId: "R_kgDOUNKoMA",
-    category: "Announcements",
-    categoryId: "DIC_kwDOUNKoMM4DFDGS",
-    mapping: "pathname",
-    reactionsEnabled: "1",
-    inputPosition: "bottom",
-    lang: "zh-CN",
-  } satisfies GiscusConfig | null,
+  homeSocials: [{ label: "Email", href: "mailto:603675760@qq.com" }] satisfies SocialLink[],
+  giscus: null,
 };
 
 export function requireSiteUrl() {
