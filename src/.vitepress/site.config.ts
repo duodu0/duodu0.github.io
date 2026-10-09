@@ -135,7 +135,7 @@ export const siteConfig = {
     },
   ] satisfies NavItem[],
   homeSocials: [{ label: "Email", href: "mailto:603675760@qq.com" }] satisfies SocialLink[],
-  giscus: null,
+  giscus: null satisfies GiscusConfig | null,
 };
 
 export function requireSiteUrl() {
