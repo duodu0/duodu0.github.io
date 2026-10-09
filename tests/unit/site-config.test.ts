@@ -15,6 +15,7 @@ function isSupportedHref(value: string) {
   if (/^\/(?!\/)/.test(value)) return true;
   try {
     const url = new URL(value);
+    if (url.protocol === "mailto:") return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(url.pathname);
     return url.protocol === "https:" || url.protocol === "http:";
   } catch {
     return false;
